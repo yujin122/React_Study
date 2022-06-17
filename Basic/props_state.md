@@ -68,9 +68,11 @@ export  default  function  Ex(props) {
 - react 모듈에서 **{ useState }** 를 불러오고 **useState() 를 선언**하여 사용
 - 데이터 변경 함수를 통해 데이터를 변경한다.
 
->const[state, setState] = useState(initialState); 
->
->const[데이터, 데이터변경함수] = useState(초기값(생락가능));
+```
+const[state, setState] = useState(initialState); 
+
+const[데이터, 데이터변경함수] = useState(초기값(생락가능));
+```
 
 <br>
 
