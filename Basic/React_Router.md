@@ -7,9 +7,12 @@
 <br> 
 
 ### 설치
-<img src="https://user-images.githubusercontent.com/46274903/174223948-46ce9baa-c678-47d6-a2a4-f105e6bbceb4.png">
 
->yarn add react-router-dom
+```
+yarn add react-router-dom
+```
+
+<img src="https://user-images.githubusercontent.com/46274903/174223948-46ce9baa-c678-47d6-a2a4-f105e6bbceb4.png">
 
 <br>
 
@@ -67,10 +70,10 @@ export  default  App;
 
 ##### ※ a 태그의 경우 클릭 시 페이지를 새로 불러오기 때문에 Link 태그를 사용
 
-> import { Link } from "react-router-dom"
-> 
->
-> < Link to="경로" >< /Link >
+```
+import { Link } from "react-router-dom"
+<Link to="경로"></Link>
+```
 
 <br>
 
@@ -81,14 +84,13 @@ export  default  App;
 
 **해당 피라미터를 받는 js**
 
->import { useParams } from "react-router-dom"
->
->
->const { 파라미터명 } = useParams();
->
->or
->
->const 파라미터명 = userParams().파라미터명;
+```
+import { useParams } from "react-router-dom"
+
+const { 파라미터명 } = useParams();
+or
+const 파라미터명 = userParams().파라미터명;
+```
 
 ```javascript
 // DayList.js
