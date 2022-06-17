@@ -10,6 +10,7 @@
 -  **문자열**을 전달할 때는 **큰따옴표("")**, **문자열 외의 값**을 전달할 때는 **중괄호({})** 사용
 - **N개의 프로퍼티** 전달 가능
 ```javascript
+// App.js
 import  Ex  from  './component/Ex';
 
 function  App() {
@@ -33,6 +34,7 @@ export  default  App;
 ### key
 엘리먼트에 안정적인 고유성을 부여하기 위해 배열 내부의 엘리먼트에 지정해야함.
 - 어떤 항목을 변경, 추가 또는 삭제할지 식별하는데 사용 
+- key는 요소의 **고유한 값**이어야 한다. (index 권장 X)
 
 <br>
 
@@ -42,23 +44,6 @@ export  default  App;
 
 
 ```javascript
-// App.js
-import  Ex  from  './component/Ex';
-
-function  App() {
-	const  arr = [
-		{id:  1, str:  "hello"},
-		{id:  2, str:  "react"},
-		{id:  3, str:  "!!"}
-	]
-
-	return (
-		<div  className="App">
-			<Ex  str = "hello"  arr={arr}/>
-		</div>
-	);
-}
-
 // Ex.js
 export  default  App;
 
